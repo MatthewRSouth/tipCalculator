@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  background-color: #fff;
+}
+.inputSection {
+  background-color: #c8a2c8;
+  height: 45%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px;
+  padding-bottom: 10px;
+}
+.billTitle {
+  display: flex;
+  justify-content: center;
+}
+.billInput {
+  text-align: center;
+}
+.inputArea {
+  text-align: center;
+  height: 4rem;
+  width: 75%;
+  font-size: 30pt;
+  border-radius: 10px;
+}
+.taxWrapper {
+  --bg--offset: 0%;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  bottom: 10px;
+  left: 2.5%;
+  box-shadow: 2.8px 2.8px 2.2px;
+  width: 95%;
+}
+.taxWrapper > button {
+  font-size: 15pt;
+  font-weight: bold;
+  width: 25%;
+  border: none;
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+}
+.taxWrapper::after {
+  content: "";
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: var(--bg--offset);
+  background-color: rgba(200, 162, 200, 0.5);
+  transition: left 0.3s;
+}
+.taxWrapper > button:not(:last-of-type) {
+  border-right: 1px solid #eee;
+}
+.taxInformation {
+  height: 75px;
+  margin: 10px 0px 10px 0px;
+  align-content: center;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+}
+.outputSection {
+  border: 4px solid #c8a2c8;
+  margin-top: 30px;
+  width: 95%;
+  height: 15rem;
+  border-radius: 10px;
+}
+.calculateBtn {
+  height: 5rem;
+  width: 95%;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-size: 45pt;
+  background-color: #c8a2c8;
+}
+.resetBtn {
+  height: 5rem;
+  width: 95%;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-size: 45pt;
+  background-color: #c8a2c8;
+}
+.tipNum {
+  margin-top: -50px;
+}

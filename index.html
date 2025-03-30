@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gruppo&family=Lexend+Deca:wght@100..900&family=M+PLUS+1p&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Tip Calculator</h1>
+    </header>
+    <main>
+      <div class="inputSection">
+        <div class="billInput">
+          <h2 class="billTitle">Bill Amount</h2>
+          <input id="billNum" class="inputArea" type="number" />
+        </div>
+        <div class="taxAmount">
+          <h2 class="billTitle">Tip %</h2>
+          <div class="taxWrapper">
+            <button ontouchstart="slideBg(0)" id="btn10">10%</button>
+            <button ontouchstart="slideBg(1)" id="btn15">15%</button>
+            <button ontouchstart="slideBg(2)" id="btn18">18%</button>
+            <button ontouchstart="slideBg(3)" id="btn20">20%</button>
+          </div>
+          <div id="taxInformation"></div>
+        </div>
+      </div>
+      <div class="outputSection">
+        <h2>Tip Amount</h2>
+        <h3 id="tipNum"></h3>
+        <h2>Total Bill</h2>
+        <h3 id="totalNum"></h3>
+      </div>
+    </main>
+    <footer>
+      <button id="reset" class="resetBtn">RESET</button>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
